@@ -1,0 +1,33 @@
+{
+  "name": "logger-node",
+  "version": "1.0.0",
+  "description": "Node logger for real time logger hub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SLedunois/logger-node"
+  },
+  "keywords": [
+    "logger",
+    "real-time"
+  ],
+  "author": "Simon LEDUNOIS <simon.ledunois@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SLedunois/logger-node/issues"
+  },
+  "homepage": "https://github.com/SLedunois/logger-node",
+  "dependencies": {
+    "express": "^4.15.2",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "ip": "^1.1.5",
+    "net": "^1.0.2",
+    "socket.io": "^1.7.3",
+    "tail": "^1.2.1"
+  }
+}
