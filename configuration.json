@@ -3,6 +3,7 @@
     "host": "localhost",
     "port": 3000
   },
+  "platformName" : "Localhost",
   "files": [
     {
       "name": "Logger test file",

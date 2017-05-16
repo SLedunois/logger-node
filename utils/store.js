@@ -1,4 +1,4 @@
-var ip = require('ip').address();
+const ip = require('ip').address();
 module.exports = {
   /**
    * Generate and Id based on one ip number and a timestamp

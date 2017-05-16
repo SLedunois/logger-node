@@ -2,6 +2,7 @@ const fs = require('fs');
 const configuration = require('./configuration.json');
 const store = require('./store');
 const File = require('./model/file');
+const ip = require('ip').address();
 // Utils imports
 const storeUtils = require('./utils/store');
 
@@ -40,6 +41,7 @@ socket.on('file:getContent', function (fileId) {
 socket.on('config:getConfiguration', function () {
   socket.emit('config:configuration', {
     type: 'NODE',
+    platformName: configuration.hasOwnProperty('platformName') ? configuration.platformName : ip,
     files: store.getAll()
   });
 });
